@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom';
 const Header = () => {
   return (
     <>
@@ -152,15 +152,9 @@ const Header = () => {
                     <nav>
                        
                         <ul class="main-menu d-none d-lg-inline font-small">
-                            <li class="menu-item-has-children">
-                                <a href="index.html.htm"> <i class="elegant-icon icon_house_alt mr-5"></i> Home</a>
-                                <ul class="sub-menu text-muted font-small">
-                                    <li><a href="index.html.htm">Home default</a></li>
-                                    <li><a href="home-2.html.htm">Homepage 2</a></li>
-                                    <li><a href="home-3.html.htm">Homepage 3</a></li>
-                                </ul>
-                            </li>
-                            <li> <a href="category-list.html.htm">Travel</a> </li>
+                            
+                            <li> <Link to="/"><i class="elegant-icon icon_house_alt mr-5"></i> Home</Link> </li>
+                            <li> <Link to="/about">About</Link> </li>
                             <li class="current-item has-mega-menu">
                                 <a href="category-list.html.htm">Mega Menu</a>
                                 <ul class="mega-menu">
@@ -211,7 +205,7 @@ const Header = () => {
 
                                 </ul>
                             </li>
-                            <li> <a href="category-grid.html.htm">Guides</a> </li>
+                            <li> <Link to="/contact">Contact</Link> </li>
                             <li> <a href="category-masonry.html.htm">Food</a> </li>
                             <li> <a href="category-big.html.htm">Hotels</a> </li>
                             <li> <a href="category.html.htm">Review</a> </li>
