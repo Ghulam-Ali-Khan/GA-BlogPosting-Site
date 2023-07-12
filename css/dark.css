@@ -3,12 +3,12 @@
 .dark-light-mode {
 	height: 30px;
 	width: 30px;
-	background: url(../imgs/theme/dark.svg) no-repeat center;
+	background: url(../src/imgs/dark.svg) no-repeat center;
 	display: inline-block;
 	margin-top: 2px;
 }
 .dark-light-mode.dark {
-	background: url(../imgs/theme/light.svg) no-repeat center;
+	background: url(../src/imgs/light.svg) no-repeat center;
 }
 body.dark  {
 	background-color: var(--dark-background);
